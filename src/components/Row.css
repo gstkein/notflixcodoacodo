@@ -1,0 +1,105 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.row_posters {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  transition: transform 450ms;
+  padding-right: 10px;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row_poster_large {
+  max-height: 250px;
+}
+
+.row_poster_large:hover {
+  transform: scale(1.09);
+}
+
+.alice-carousel__prev-btn-wrapper {
+  width: 10px;
+}
+
+.alice-carousel__next-btn-wrapper {
+  width: 10px;
+}
+
+.alice-carousel__prev-btn {
+  text-align: left !important;
+  position: relative;
+  bottom: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  left: -30px;
+}
+.alice-carousel__next-btn {
+  text-align: right !important;
+  position: absolute;
+  bottom: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  right: 8px;
+}
+
+.alice-carousel__prev-btn-item.__inactive,
+.alice-carousel__next-btn-item.__inactive {
+  text-align: left;
+  position: relative;
+  opacity: 0.4;
+  pointer-events: none;
+  color: white;
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+  color: white;
+  opacity: 0.4;
+}
+
+.alice-carousel__prev-btn [data-area]::after,
+.alice-carousel__next-btn [data-area]::after {
+  color: white;
+}
+.alice-carousel__wrapper {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+}
+
+.alice-carousel__prev-btn {
+  width: 20px !important;
+}
+
+.alice-carousel__next-btn {
+  width: 20px !important;
+}
