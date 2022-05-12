@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import requests from '../utils/request';
 import useFetchRandomMovie from '../hooks/useFetchRandomMovie';
-import './Banner.css';
+import styles from './Banner.component.css';
 
 
 

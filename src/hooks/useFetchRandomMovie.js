@@ -10,9 +10,13 @@ const useFetchRandomMovie = (fetchUrl) => {
     }, [])
     
     async function fetchData() {
-        const response = await axios.get(fetchUrl);
-        let r = Math.floor(Math.random() * (response.data.results.length - 1));
-        setMovie(response.data.results[r]);
+        try {
+            const response = await axios.get(fetchUrl);
+            let r = Math.floor(Math.random() * (response.data.results.length - 1));
+            setMovie(response.data.results[r]);
+        } catch (error) {
+            console.log("error: " + error);
+        }
     }
     console.log(movie);
 

@@ -27,3 +27,9 @@
   object-fit: contain;
   width: 30px;
 }
+.nav_username {
+    color: white;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+}
